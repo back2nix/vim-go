@@ -352,9 +352,9 @@ function! s:newlsp() abort
       endif
       let self.wd = l:wd
 
-      if go#config#EchoCommandInfo()
-        call go#util#EchoProgress("initializing gopls")
-      endif
+      " if go#config#EchoCommandInfo()
+      "   call go#util#EchoProgress("initializing gopls")
+      " endif
 
       let l:status = {
             \ 'desc': '',
